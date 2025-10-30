@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Realtime Whiteboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Realtime Whiteboard</h1>
+      <div class="controls">
+        <label>Room: <input id="room" type="text" /></label>
+        <button id="share">Copy Share Link</button>
+        <input id="color" type="color" value="#1e90ff" />
+        <input id="size" type="range" min="1" max="20" value="3" />
+        <button id="clear">Clear</button>
+      </div>
+      <div class="presence">
+        <span id="count">0</span> online
+        <div id="avatars"></div>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="board"></canvas>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
