@@ -1,0 +1,14 @@
+{
+  "name": "realtime-whiteboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Full-stack collaborative whiteboard with WebSockets (draw together, presence, clear/reset, room sharing).",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  }
+}
